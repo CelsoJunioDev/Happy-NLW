@@ -1,0 +1,22 @@
+/* Regra CSS*/
+
+/* #body {
+    color: rgb(255, 45, 45);
+} */
+body {
+  color: white;
+  height: 100vh;
+}
+:root {
+    font-size: 62.5%;
+}
+
+body, input, button, textarea{
+   /* font-weight: 400;
+   font-size: 18px; 
+   line-height: 1;
+   font-family: 'Nunito', sans-serif; */
+
+   font: 400 1.8rem/1 'nunito', sans-serif;
+}
+
