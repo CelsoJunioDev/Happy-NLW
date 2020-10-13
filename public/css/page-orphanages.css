@@ -1,0 +1,108 @@
+#page-orphanages {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+aside {
+    width: clamp(24rem, 25vw, 44rem);
+    background: linear-gradient(
+    45deg,
+    rgba(45, 45, 120, 1) 0%,
+    rgba(73, 73, 207, 1) 45%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: clamp(3rem, 5vw, 8rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+aside h2 {
+    margin-top: 6.4rem;
+
+    font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
+}
+aside p {
+    margin-top: 2.4rem;
+
+    font: 400 1.6rem/1.5 'Nunito', sans-serif;
+}
+
+aside footer p {
+    margin-top: .8rem;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+
+    animation-delay: 300ms;
+}
+
+/* Button */
+a.create-orphanage {
+    position: absolute; /*cria uma pilha acima do elemento anterior.*/
+    right: 4rem;
+    bottom: 4rem;
+
+    z-index: 10;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #15c3d6;
+    border: 0;
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+}
+
+a.create-orphanage:hover {
+    background: #27d6eb;
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.leaflet-popup-content{
+    color: #0089a5;
+    font: 700 2rem/1 'Nunito', sans-serif;
+    /* font-size:  2rem;
+    font-weight: 600; */
+    margin: .8rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content a{
+    width: 4rem;
+    height: 4rem;
+    background: #15c3d6;
+    box-shadow: 17.2868px 27.65px 41.48px rgba(23, 142, 166, 0.16); /*Deslocamento hor| vert| blur(esfumaçado, cor */
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color .2s;
+}
+
+.leaflet-popup-content a:hover{
+    background: #17d6eb;
+}
+.leaflet-popup-tip{
+    display: none;
+}
+
+.leaflet-container{
+    z-index: 5;
+}
